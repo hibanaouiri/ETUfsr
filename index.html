@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Résultats d'examen - Faculté des Sciences Rabat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #f5f5f5;
+      color: #2c3e50;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+    #resultsTable {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #999;
+      text-align: left;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    caption {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    p.semester {
+      text-align: left;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 16px;
+      color: #2c3e50;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Faculté de Sciences Rabat</h1>
+  <h2>Bonjour Hiba Naouiri</h2>
+  <button id="showBtn" onclick="showResults()">Voir résultats d'examens S2</button>
+  
+  <div id="resultsTable">
+    <h3>Résultat Examen 2024 - 2025 S2 PC</h3>
+    <table>
+      <tr>
+        <th>Matière</th>
+        <th>Résultat</th>
+        <th>Notes (CM et TP)</th>
+      </tr>
+      <tr><td>Chimie Organique</td><td>Validé</td><td>16.31</td></tr>
+      <tr><td>Chimie Générale</td><td>Validé</td><td>16.5</td></tr>
+      <tr><td>Chimie en Solution</td><td>Validé</td><td>16</td></tr>
+      <tr><td>Électrostatique</td><td>Validé</td><td>14.25 (avec compensation)</td></tr>
+      <tr><td>Algèbre</td><td>Validé</td><td>15</td></tr>
+      <tr><td>Optique Géométrique</td><td>Validé</td><td>15.17</td></tr>
+    </table>
+    <p class="semester" style="margin-top: 30px;">Semestre 2 : Validé  Note :</p>
+  </div>
+
+  <script>
+    function showResults() {
+      document.getElementById('resultsTable').style.display = 'block';
+      document.getElementById('showBtn').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
